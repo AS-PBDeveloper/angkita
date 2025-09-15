@@ -1,0 +1,34 @@
+@keyframes rotate-rainbow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rainbow-btn {
+  padding: var(--borderWidth);
+  border-radius: var(--borderRadius);
+  position: relative;
+}
+
+.rainbow-btn::before {
+  content: "";
+  background: conic-gradient(var(--allColors));
+  animation: rotate-rainbow var(--duration) linear infinite;
+  filter: blur(var(--blur));
+  position: absolute;
+  inset: -200%;
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.btn-content {
+  border-radius: calc(var(--borderRadius) - var(--borderWidth));
+  background-color: var(--bgColor);
+  z-index: 10;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
