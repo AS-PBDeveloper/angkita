@@ -1,6 +1,6 @@
 # Angkita Paul - Portfolio Website 
 
-[Anchor Text](https://angkita.netlify.app/)
+[LIVE PORTFOLIO LINK](https://angkita.netlify.app/)
 
 A modern, responsive portfolio website showcasing my work as a Full Stack Developer. Built with React, Vite, and Tailwind CSS. Features dark mode, smooth animations, and a contact form with EmailJS integration.
 
